@@ -1,6 +1,6 @@
 package com.fz.mybatis.domain;
 
-import com.fz.mybatis.common.BaseDo;
+import com.fz.mybatis.BaseDo;
 import lombok.Data;
 
 import java.util.List;
@@ -10,13 +10,13 @@ import java.util.List;
  */
 @Data
 public class UserDo extends BaseDo {
-    private String userName;//µÇÂ½ÓÃ»§Ãû
-    private String password;//µÇÂ½ÃÜÂë
-    private String realName;//ÕæÊµÐÕÃû
-    private String email;//µç×ÓÓÊ¼þ
-    private String cellphone;//ÁªÏµµç»°
-    private String address;//µØÖ·
-    private String userType;//user_type = 1:ÏµÍ³ÓÃ»§ 0:×¢²á»áÔ±ÓÃ»§
+    private String userName;//ï¿½ï¿½Â½ï¿½Ã»ï¿½ï¿½ï¿½
+    private String password;//ï¿½ï¿½Â½ï¿½ï¿½ï¿½ï¿½
+    private String realName;//ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½
+    private String email;//ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½
+    private String cellphone;//ï¿½ï¿½Ïµï¿½ç»°
+    private String address;//ï¿½ï¿½Ö·
+    private String userType;//user_type = 1:ÏµÍ³ï¿½Ã»ï¿½ 0:×¢ï¿½ï¿½ï¿½Ô±ï¿½Ã»ï¿½
 
     private UserCustomDo userCustomDo;
 

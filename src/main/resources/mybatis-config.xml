@@ -12,7 +12,7 @@
     </settings>
 
     <typeAliases>
-        <package name="com.fengze.mybatis.domain"/>
+        <package name="com.fz.mybatis.domain"/>
     </typeAliases>
 
     <environments default="development">

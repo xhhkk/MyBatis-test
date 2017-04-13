@@ -1,7 +1,7 @@
 package com.fz.mybatis.domain;
 
 
-import com.fz.mybatis.common.BaseDo;
+import com.fz.mybatis.BaseDo;
 import lombok.Data;
 
 /**

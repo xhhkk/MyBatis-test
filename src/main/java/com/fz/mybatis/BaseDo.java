@@ -1,4 +1,4 @@
-package com.fz.mybatis.common;
+package com.fz.mybatis;
 
 import lombok.Data;
 
