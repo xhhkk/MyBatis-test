@@ -1,9 +1,9 @@
 # MyBatis 项目
 
-tag1 ： 项目初始 tag-name = v1.0
+1.使用Mapper接口访问数据库
+2.通用Mapper，自动生成文件
+3.缓存
 
-tag2 ： 搭建环境并测试 ,单表的CRUD操作，使用xml配置方式 tag-name = v1.1
+tag1 ： 使用Mapper接口方式，完成单表CRUD操作 tag-name = v1.2
 
-tag3 ： 使用Mapper接口方式，完成单表CRUD操作 tag-name = v1.2
-
-tag4 ： 实现缓存，使用通用mapper tag-name = v1.3
+tag2 ： 实现缓存，使用通用mapper，一对多  tag-name = v1.3
