@@ -1,7 +1,9 @@
 # MyBatis 项目
 
 1.使用Mapper接口访问数据库
-2.通用Mapper，自动生成文件
+
+2.通用Mapper，自动生成文件(dao包 and model包)
+
 3.缓存
 
 tag1 ： 使用Mapper接口方式，完成单表CRUD操作 tag-name = v1.2
