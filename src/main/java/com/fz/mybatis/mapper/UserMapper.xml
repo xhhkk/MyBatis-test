@@ -60,11 +60,6 @@
         </foreach>
     </select>
 
-    <insert id="add" parameterType="UserDo">
-        INSERT INTO TB_USER(USER_NAME,PASS_WORD,REAL_NAME,EMAIL,CELL_PHONE,ADDRESS,USER_TYPE,STATE)
-        <foreach item="" open="VALUES(" close=")" separator=",">
-            #{}
-        </foreach>
-    </insert>
+
 
 </mapper>
