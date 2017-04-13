@@ -1,8 +1,12 @@
 package com.fz.mybatis.mapper;
 
-import com.fengze.mybatis.domain.User;
-import com.fengze.mybatis.domain.UserDo;
+import com.fz.mybatis.domain.User;
+import com.fz.mybatis.domain.UserDo;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
