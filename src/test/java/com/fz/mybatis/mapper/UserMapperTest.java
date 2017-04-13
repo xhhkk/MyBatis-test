@@ -45,7 +45,7 @@ public class UserMapperTest {
 
         UserDo user = mapper.findUserById(1);
 
-        log.info("User{}",user);
+        log.info("User：{}",user);
 
         User u = new User();
         u.setId(12);
@@ -58,7 +58,7 @@ public class UserMapperTest {
 
         UserDo user2 = mapper.findUserById(1);
 
-        log.info("User2{}",user2);
+        log.info("User2：{}",user2);
 
     }
 

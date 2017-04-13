@@ -1,7 +1,7 @@
 package com.fz.mybatis.mapper;
 
-import com.fengze.mybatis.domain.ProDetailDo;
-import com.fengze.mybatis.domain.ProductDo;
+import com.fz.mybatis.domain.ProDetailDo;
+import com.fz.mybatis.domain.ProductDo;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;

@@ -1,4 +1,4 @@
-package com.fz.mybatis;
+package com.fz.mybatis.common;
 
 /**
  * 分页参数类

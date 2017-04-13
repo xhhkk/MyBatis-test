@@ -1,4 +1,4 @@
-package com.fz.mybatis;
+package com.fz.mybatis.common;
 
 import com.fz.mybatis.domain.Page;
 

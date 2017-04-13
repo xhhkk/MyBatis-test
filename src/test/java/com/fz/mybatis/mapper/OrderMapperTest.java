@@ -1,6 +1,6 @@
 package com.fz.mybatis.mapper;
 
-import com.fengze.mybatis.domain.OrderDo;
+import com.fz.mybatis.domain.OrderDo;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;

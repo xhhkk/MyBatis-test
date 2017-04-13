@@ -6,7 +6,7 @@
 <mapper namespace="com.fz.mybatis.mapper.UserMapper">
 
     <!--<cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>-->
-    <!--<cache type="org.mybatis.caches.ehcache.EhcacheCache"/>-->
+    <cache type="org.mybatis.caches.ehcache.EhcacheCache"/>
 
     <select id="findUserById" parameterType="java.lang.Integer" resultType="UserDo">
         select user_id userId,user_name userName, pass_word password from tb_user where user_id=#{id}
