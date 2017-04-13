@@ -12,4 +12,6 @@
             diskExpiryThreadIntervalSeconds="120"
             memoryStoreEvictionPolicy="LRU">
     </defaultCache>
+    <!--eternal：是否永久保存缓存
+                 true：永久保存  false：不永久，就可以设置生命周期（秒数）-->
 </ehcache>
