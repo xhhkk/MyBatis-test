@@ -99,7 +99,7 @@
         FROM
           TB_PRODUCT P,
           TB_PROD_DETAIL D
-        WHERE P.PRO_ID = D.PROD_ID
+        WHERE P.PRO_ID = D.PRO_ID
           AND P.STATE = '1'
           AND D.STATE = '1'
     </select>
@@ -149,7 +149,7 @@
         FROM
           TB_PRODUCT P,
           TB_PROD_DETAIL D
-        WHERE P.PRO_ID = D.PROD_ID
+        WHERE P.PRO_ID = D.PRO_ID
           AND P.STATE = '1'
           AND D.STATE = '1'
     </select>
@@ -168,7 +168,7 @@
         FROM
         TB_PRODUCT P,
         TB_PROD_DETAIL D
-        WHERE P.PRO_ID = D.PROD_ID
+        WHERE P.PRO_ID = D.PRO_ID
         AND P.STATE = '1'
         AND D.STATE = '1'
     </select>
