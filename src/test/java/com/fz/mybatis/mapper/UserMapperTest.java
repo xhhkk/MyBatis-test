@@ -47,14 +47,14 @@ public class UserMapperTest {
 
         log.info("User：{}",user);
 
-        User u = new User();
+       /* User u = new User();
         u.setId(12);
         u.setUserName("wangwu");
         u.setPassword("pppppppppppppppp");
         u.setAddress("中文");
         u.setUpdateBy("admin");
 
-        mapper.updateById(u);
+        mapper.updateById(u);*/
 
         UserDo user2 = mapper.findUserById(1);
 
