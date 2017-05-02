@@ -15,6 +15,11 @@
 
     <!-- 别名定义 -->
     <typeAliases>
+        <!-- 单个别名定义: -->
+         <!--<typeAlias type="com.fz.mybatis.mapper.UserMapper" alias="userMapper"/>-->
+
+        <!-- 批量别名定义 （常用）
+           指定包名，mybatis自动扫描包中的domain类，自动定义别名，别名就是类名（首字母大写或小写都可以）-->
         <package name="com.fz.mybatis.domain"/>
     </typeAliases>
 
@@ -33,6 +38,16 @@
 
 
     <mappers>
+        <!-- 通过resource方法 一次加载一个映射文件 -->
+        <!--<mapper resource="mapper/UserMapper.xml"/>-->
+
+        <!-- 通过mapper接口加载
+           遵循规范：需要将mapper接口类名和mapper.xml映射文件名称保持一致，且在一个目录中
+           上面规范的前提：使用的是mapper代理方法
+         -->
+        <!--<mapper class="com.fz.mybatis.mapper.UserMapper"/>-->
+
+        <!--  -->
         <package name="com.fz.mybatis.mapper"/>
     </mappers>
 </configuration>
