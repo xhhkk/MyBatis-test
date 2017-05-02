@@ -24,9 +24,13 @@ public class UserMapperTest {
 
     @Before
     public void setUp() throws Exception {
+        //mybatis配置文件
         String resource = "mybatis-config.xml";
+        //得到配置文件流
         InputStream inputStream = Resources.getResourceAsStream(resource);
+        //创建会话工厂，传入mybatis的配置文件信息
         sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+        //通过工厂得到SqlSession
         session = sqlSessionFactory.openSession();
     }
 

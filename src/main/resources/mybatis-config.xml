@@ -3,14 +3,17 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
+    <!-- 加载属性文件 -->
     <properties resource="jdbc.properties"/>
 
+    <!-- 全局参数配置 -->
     <settings>
         <setting name="cacheEnabled" value="true"/>
         <setting name="lazyLoadingEnabled" value="true"/><!--默认false-->
         <setting name="aggressiveLazyLoading" value="false"/><!--默认true-->
     </settings>
 
+    <!-- 别名定义 -->
     <typeAliases>
         <package name="com.fz.mybatis.domain"/>
     </typeAliases>
