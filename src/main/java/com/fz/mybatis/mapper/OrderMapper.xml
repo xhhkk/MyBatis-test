@@ -6,6 +6,11 @@
 <mapper namespace="com.fz.mybatis.mapper.OrderMapper">
 
     <resultMap id="orderMap" type="OrderDo">
+        <!--
+         id:指定查询列中的唯一标识，订单信息中的唯一标识，如果有多个列组成唯一标识，配置多个id
+             column：订单信息的唯一标识列
+             property：订单信息的唯一标识列 所映射到OrderDo中哪个属性
+         -->
         <id column="ORDER_ID" property="orderId"/>
         <result column="USER_ID" property="userId"/>
         <result column="ORDER_PRICE" property="orderPrice"/>
@@ -19,11 +24,23 @@
         <result column="UPDATE_BY" property="updateBy"/>
         <result column="UPDATE_DATE" property="updateDate"/>
 
+        <!-- 一个订单关联查询出了多条明细，要使用collection进行映射
+		collection：对关联查询到多条记录映射到集合对象中
+		   property：将关联查询到多条记录映射到OrderDo哪个属性
+		   ofType：指定映射到list集合属性中pojo的类型
+         -->
         <collection property="detLs" ofType="OrderDetDo">
             <id column="DETAIL_ID" property="id"/>
             <result column="PRO_NAME" property="proName"/>
 
+            <!--
+            association：用于映射关联查询单个对象的信息
+		         property：要将关联查询的用户信息映射到OrderDo中哪个属性 -->
             <association property="productDo" javaType="ProductDo">
+                <!--
+                id：关联查询商品的唯一标识
+			       column：指定唯一标识商品信息的列
+			       javaType：映射到productDo的哪个属性 -->
                 <id column="PRO_ID" property="id"/>
                 <result column="PRO_NOW_PRICE" property="proNowPrice"/>
                 <result column="PRO_NAME" property="proName"/>
