@@ -57,6 +57,7 @@
          from tb_product p WHERE p.pro_id=#{id}
     </select>
 
+    <!-- 代码片段 -->
     <sql id="queryProd">
         <if test="proName!=null and proName!=''">
             AND t.pro_name LIKE '%${proName}%'
